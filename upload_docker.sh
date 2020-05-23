@@ -9,7 +9,7 @@ dockerpath="magalee/api"
 
 # Step 2:  
 # Authenticate & tag
-docker login -u magalee --p {Secret.dockerPwd}
+docker login -u magalee --p ${{Secret.dockerPwd}}
 docker tag api $dockerpath
 echo "Docker ID and Image: $dockerpath"
 
